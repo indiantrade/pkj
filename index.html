@@ -1,155 +1,379 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Intraday Bulls</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-<style>
-  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-  html{-webkit-text-size-adjust:100%}
-  body{
-    font-family:'Roboto',Arial,sans-serif;
-    background:#0d0d0d;
-    color:#fff;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    padding:max(12px,env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) max(12px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));
-  }
-  .container{
-    width:100%;
-    max-width:480px;
-    background:#111827;
-    border:2px solid #d4b800;
-    border-radius:clamp(28px,9vw,50px);
-    box-shadow:0 0 18px rgba(212,184,0,.55), inset 0 0 12px rgba(212,184,0,.15);
-    padding:clamp(18px,5vw,30px) clamp(12px,4vw,18px) clamp(24px,6vw,40px);
-  }
-  .name{
-    border:1px solid #6b7280;
-    text-align:center;
-    font-size:clamp(19px,5.6vw,24px);
-    font-weight:500;
-    padding:10px 8px;
-    color:#f3f4f6;
-    word-break:break-word;
-  }
-  .avatar{
-    width:clamp(130px,42vw,175px);
-    height:clamp(130px,42vw,175px);
-    border-radius:50%;
-    border:3px solid #a8c400;
-    margin:clamp(26px,8vw,42px) auto clamp(34px,10vw,60px);
-    overflow:hidden;
-    display:block;
-  }
-  .avatar img{width:100%;height:100%;object-fit:cover;display:block}
-  .card{
-    background:#1b2045;
-    border:1px solid #5b6178;
-    box-shadow:0 0 10px rgba(200,200,220,.35);
-    padding:clamp(12px,3.5vw,16px) clamp(10px,3vw,14px);
-    display:flex;
-    align-items:flex-start;
-    gap:clamp(10px,3vw,14px);
-  }
-  .icon{
-    flex:0 0 clamp(46px,13vw,58px);
-    width:clamp(46px,13vw,58px);
-    height:clamp(46px,13vw,58px);
-    border:3px solid #fff;
-    border-radius:50%;
-    display:flex;align-items:center;justify-content:center;
-    font-size:clamp(20px,6vw,26px);
-    margin-top:4px;
-  }
-  .card h3{font-size:clamp(16px,4.8vw,21px);font-weight:700;line-height:1.25;color:#fff}
-  .card p{font-size:clamp(14px,4vw,17px);font-weight:300;color:#c9ccd8;line-height:1.6;margin-top:6px}
-  .btn-wrap{text-align:center;margin:clamp(24px,7vw,36px) 0 clamp(30px,9vw,48px);padding:0 6px}
-  .btn{
-    display:flex;align-items:center;justify-content:center;gap:10px;
-    width:100%;
-    max-width:340px;
-    margin:0 auto;
-    background:#0069d9;
-    color:#fff;
-    text-decoration:none;
-    font-weight:700;
-    font-size:clamp(17px,5vw,23px);
-    padding:clamp(14px,4vw,18px) 16px;
-    min-height:56px;
-    border:3px dotted #fff;
-    border-radius:14px;
-    box-shadow:0 0 12px rgba(212,184,0,.9);
-    animation:pulse 1.6s infinite;
-    white-space:nowrap;
-  }
-  .btn:active{transform:scale(.97)}
-  .btn svg{width:clamp(24px,7vw,30px);height:clamp(24px,7vw,30px);flex:0 0 auto}
-  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
-  .gap{height:clamp(24px,7vw,40px)}
-  .disclaimer{
-    text-align:center;
-    font-size:clamp(11.5px,3.3vw,13px);
-    line-height:1.65;
-    color:#e5e7eb;
-    margin-top:clamp(20px,6vw,28px);
-    padding:0 4px;
-  }
-  @media (prefers-reduced-motion:reduce){.btn{animation:none}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANKAJ BHARDWAJ | Official Stock Market Learning Channel</title>
+    <meta name="description" content="Master Price Action, Chart Patterns & Market Structure with PANKAJ BHARDWAJ. Strictly an educational stock market learning channel.">
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1670021781378963');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1670021781378963&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        tg: {
+                            bg: '#0E1621',
+                            surface: '#17212B',
+                            surfaceHover: '#1E2A36',
+                            border: '#232E3C',
+                            sky: '#24A1DE',
+                            skyLight: '#2AABEE',
+                            textMuted: '#7F91A4',
+                            textSecondary: '#A8B7C7',
+                        }
+                    },
+                    animation: {
+                        'tg-pulse': 'tgPulse 2.8s infinite ease-in-out',
+                    },
+                    keyframes: {
+                        tgPulse: {
+                            '0%, 100%': { boxShadow: '0 6px 22px rgba(36, 161, 222, 0.32)' },
+                            '50%': { boxShadow: '0 8px 32px rgba(42, 171, 238, 0.55)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html, body {
+            background-color: #0E1621;
+            max-width: 100%;
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+        /* Subtle Telegram chat wallpaper pattern */
+        .tg-chat-pattern {
+            background-image: radial-gradient(rgba(42, 171, 238, 0.06) 1px, transparent 1px),
+                              radial-gradient(rgba(36, 161, 222, 0.04) 1px, #0E1621 1px);
+            background-size: 28px 28px;
+            background-position: 0 0, 14px 14px;
+        }
+    </style>
 </head>
-<body>
-  <div class="container">
+<body class="bg-tg-bg tg-chat-pattern text-slate-100 antialiased selection:bg-tg-sky/30 selection:text-white min-h-[100dvh] w-full flex flex-col justify-between relative overflow-x-hidden">
 
-    <div class="name">Intraday Bulls</div>
+    <!-- Top Telegram App-Style Navigation Header -->
+    <header class="sticky top-0 z-20 w-full bg-tg-surface/95 border-b border-tg-border backdrop-blur-md px-3.5 py-2">
+        <div class="max-w-md sm:max-w-lg mx-auto flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2 min-w-0">
+                <span class="relative flex h-2 w-2 flex-shrink-0">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+                </span>
+                <span class="text-[11px] sm:text-xs font-medium text-tg-textSecondary truncate">
+                    Educational Market Community &bull; Free Access
+                </span>
+            </div>
+            <span class="text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-tg-sky/15 text-tg-skyLight border border-tg-sky/30 flex-shrink-0">
+                Telegram Channel
+            </span>
+        </div>
+    </header>
 
-    <div class="avatar">
-      <img src="https://i.ibb.co/Kxy5sCht/In-Shot-20261112-003926626.jpg" alt="Intraday Bulls">
+    <!-- Main Content Wrapper (Compact for 360px–430px Mobile Above-The-Fold Fit) -->
+    <main class="relative z-10 w-full max-w-md sm:max-w-lg mx-auto px-3.5 sm:px-5 pt-3 pb-4 sm:py-6 flex-grow flex flex-col">
+
+        <!-- ABOVE-THE-FOLD: COMPACT TELEGRAM CHANNEL HEADER CARD -->
+        <section aria-label="Telegram Channel Overview" class="w-full bg-tg-surface border border-tg-border rounded-2xl p-4 sm:p-5 shadow-xl mb-3.5 sm:mb-4">
+
+            <!-- Channel Profile Row (Avatar + Channel Title + Subtitle) -->
+            <div class="flex items-center gap-3.5 mb-3">
+                <!-- Circular Logo with Verified/Online Indicator -->
+                <div class="relative flex-shrink-0">
+                    <div class="w-16 h-16 sm:w-[72px] sm:h-[72px] rounded-full p-[2px] bg-gradient-to-tr from-tg-sky to-tg-skyLight shadow-md">
+                        <img
+                            src="https://iili.io/o9yhNQn.jpg"
+                            alt="PANKAJ BHARDWAJ Channel Avatar"
+                            loading="eager"
+                            decoding="async"
+                            onerror="this.onerror=null; this.src='https://placehold.co/160x160/17212B/24A1DE?text=PB';"
+                            class="w-full h-full object-cover rounded-full border-2 border-tg-surface bg-tg-bg"
+                        >
+                    </div>
+                    <!-- Verified / Online Status Badge -->
+                    <span class="absolute bottom-0 right-0 flex items-center justify-center w-5 h-5 rounded-full bg-tg-sky border-2 border-tg-surface shadow" title="Verified Channel">
+                        <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </span>
+                </div>
+
+                <!-- Channel Name & Subtitle -->
+                <div class="min-w-0 flex-1 text-left">
+                    <div class="flex items-center gap-1.5">
+                        <h1 class="text-lg sm:text-xl font-extrabold text-white tracking-tight truncate">
+                            PANKAJ BHARDWAJ
+                        </h1>
+                    </div>
+                    <p class="text-xs sm:text-[13px] font-medium text-tg-skyLight mt-0.5 leading-snug">
+                        Official Stock Market Learning Channel &bull; Free Access
+                    </p>
+                    <div class="flex items-center gap-1.5 mt-1 text-[11px] text-tg-textMuted">
+                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                        <span>Active Daily Educational Updates</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-tg-border/80 my-2.5"></div>
+
+            <!-- Concise Educational Value Headline -->
+            <div class="text-left mb-3.5">
+                <h2 class="text-[15px] sm:text-base font-bold text-slate-100 leading-snug">
+                    Master Price Action, Chart Patterns &amp; Market Structure
+                </h2>
+                <p class="text-xs text-tg-textSecondary mt-1 leading-relaxed">
+                    Join our free educational Telegram community to study daily index chart breakdowns, pure price action levels, and disciplined risk management.
+                </p>
+            </div>
+
+            <!-- SINGLE PRIMARY TELEGRAM CTA BUTTON (Configured with id="telegram-cta-btn" for Manual Meta Event Setup Tool) -->
+            <a
+                id="telegram-cta-btn"
+                href="https://t.me/+klvf3pyWFXI1NWJl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group w-full min-h-[54px] sm:min-h-[58px] flex items-center justify-center gap-2.5 bg-gradient-to-r from-tg-sky to-tg-skyLight hover:brightness-110 text-white font-extrabold text-sm sm:text-base tracking-wide py-3 px-5 rounded-xl animate-tg-pulse transition-all duration-150 transform active:scale-95 focus:outline-none focus:ring-4 focus:ring-tg-sky/40 touch-manipulation select-none"
+            >
+                <!-- Official Telegram Paper-Plane Icon -->
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 fill-current flex-shrink-0 transition-transform duration-200 group-hover:scale-110" viewBox="0 0 24 24">
+                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                </svg>
+                <span>JOIN TELEGRAM CHANNEL</span>
+            </a>
+
+            <p class="mt-2 text-center text-[11px] text-tg-textMuted">
+                Tap above to open in Telegram App &bull; 100% Free Educational Access
+            </p>
+        </section>
+
+        <!-- BELOW THE FOLD: TELEGRAM-STYLE MESSAGE BUBBLES FOR EDUCATIONAL HIGHLIGHTS -->
+        <section aria-label="What You Will Learn" class="w-full space-y-2.5 mb-2">
+
+            <!-- Telegram Date Pill -->
+            <div class="flex justify-center">
+                <span class="px-3 py-0.5 rounded-full bg-tg-surface/90 border border-tg-border text-[11px] font-medium text-tg-textSecondary shadow-sm">
+                    Inside The Channel &bull; Key Learning Pillars
+                </span>
+            </div>
+
+            <!-- Message Bubble 1 -->
+            <article class="bg-tg-surface border border-tg-border rounded-2xl rounded-tl-sm p-3.5 shadow-md text-left relative">
+                <div class="flex items-center justify-between gap-2 mb-1">
+                    <span class="text-xs font-bold text-tg-skyLight">PANKAJ BHARDWAJ</span>
+                    <span class="text-[10px] font-medium text-tg-textMuted">Module 01</span>
+                </div>
+                <h3 class="text-sm font-bold text-white leading-snug">
+                    1. Daily Nifty &amp; BankNifty Chart Breakdowns
+                </h3>
+                <p class="text-xs text-tg-textSecondary mt-1 leading-relaxed">
+                    Objective pre-market and post-market structural chart markups on Nifty &amp; BankNifty to help learners understand intraday trend shifts and market behavior.
+                </p>
+                <div class="mt-1.5 flex items-center justify-end gap-1 text-[10px] text-tg-textMuted">
+                    <span>09:15 AM</span>
+                    <svg class="w-3.5 h-3.5 text-tg-skyLight" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l4 4 8.5-9.5M11.5 16.75l8.5-9.5" />
+                    </svg>
+                </div>
+            </article>
+
+            <!-- Message Bubble 2 -->
+            <article class="bg-tg-surface border border-tg-border rounded-2xl rounded-tl-sm p-3.5 shadow-md text-left relative">
+                <div class="flex items-center justify-between gap-2 mb-1">
+                    <span class="text-xs font-bold text-tg-skyLight">PANKAJ BHARDWAJ</span>
+                    <span class="text-[10px] font-medium text-tg-textMuted">Module 02</span>
+                </div>
+                <h3 class="text-sm font-bold text-white leading-snug">
+                    2. Pure Price Action &amp; Support/Resistance Levels
+                </h3>
+                <p class="text-xs text-tg-textSecondary mt-1 leading-relaxed">
+                    Learn how to identify high-probability supply/demand zones, breakout retests, and clean candlestick patterns without relying on lagging indicators.
+                </p>
+                <div class="mt-1.5 flex items-center justify-end gap-1 text-[10px] text-tg-textMuted">
+                    <span>12:30 PM</span>
+                    <svg class="w-3.5 h-3.5 text-tg-skyLight" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l4 4 8.5-9.5M11.5 16.75l8.5-9.5" />
+                    </svg>
+                </div>
+            </article>
+
+            <!-- Message Bubble 3 -->
+            <article class="bg-tg-surface border border-tg-border rounded-2xl rounded-tl-sm p-3.5 shadow-md text-left relative">
+                <div class="flex items-center justify-between gap-2 mb-1">
+                    <span class="text-xs font-bold text-tg-skyLight">PANKAJ BHARDWAJ</span>
+                    <span class="text-[10px] font-medium text-tg-textMuted">Module 03</span>
+                </div>
+                <h3 class="text-sm font-bold text-white leading-snug">
+                    3. Risk Management &amp; Trading Psychology Lessons
+                </h3>
+                <p class="text-xs text-tg-textSecondary mt-1 leading-relaxed">
+                    Practical frameworks on position sizing, logical stop-loss invalidation, and emotional discipline to protect capital during volatile market sessions.
+                </p>
+                <div class="mt-1.5 flex items-center justify-end gap-1 text-[10px] text-tg-textMuted">
+                    <span>03:45 PM</span>
+                    <svg class="w-3.5 h-3.5 text-tg-skyLight" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l4 4 8.5-9.5M11.5 16.75l8.5-9.5" />
+                    </svg>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER WITH SEBI DISCLAIMER, POLICY MODALS & REQUIRED ATTRIBUTION -->
+    <footer class="relative z-10 w-full bg-tg-surface border-t border-tg-border py-4 px-3.5 sm:px-5">
+        <div class="max-w-md sm:max-w-lg mx-auto space-y-3">
+
+            <!-- Prominent Meta Ads & SEBI-Compliant Educational Disclaimer Box -->
+            <div class="bg-tg-bg/95 border border-amber-500/40 rounded-xl p-3 sm:p-3.5 text-left">
+                <div class="flex items-center gap-1.5 mb-1">
+                    <svg class="w-4 h-4 text-amber-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                    </svg>
+                    <span class="text-[11px] sm:text-xs font-bold text-amber-400 uppercase tracking-wider">
+                        SEBI &amp; Educational Risk Disclaimer
+                    </span>
+                </div>
+                <p class="text-[11px] text-tg-textSecondary leading-relaxed">
+                    <strong class="text-white">PANKAJ BHARDWAJ</strong> is strictly an educational learning channel. We are <strong class="text-white">NOT SEBI registered</strong> investment advisors or research analysts. We do <strong class="text-white">NOT provide guaranteed returns or buy/sell tips</strong>. All chart analyses, levels, and discussions are shared purely for educational and informational purposes. Securities market investments are subject to market risks; consult a SEBI-registered financial advisor before making any investment decisions.
+                </p>
+            </div>
+
+            <!-- In-Page Modal Buttons for Privacy Policy & Terms of Service (No External Links) -->
+            <div class="flex items-center justify-center gap-4 text-[11px] text-tg-textSecondary">
+                <button type="button" onclick="openPolicyModal('privacy')" class="hover:text-tg-skyLight underline underline-offset-2 transition-colors py-1 px-2 cursor-pointer">
+                    Privacy Policy
+                </button>
+                <span class="text-tg-border">&bull;</span>
+                <button type="button" onclick="openPolicyModal('terms')" class="hover:text-tg-skyLight underline underline-offset-2 transition-colors py-1 px-2 cursor-pointer">
+                    Terms of Service
+                </button>
+            </div>
+
+            <!-- Copyright, Meta Non-Affiliation & Bottom Attribution Link -->
+            <div class="text-center text-[11px] text-tg-textMuted leading-normal space-y-1.5">
+                <p>
+                    &copy; <span id="current-year"></span> PANKAJ BHARDWAJ. All Rights Reserved. &bull; Not affiliated with Meta Platforms, Inc. or Telegram.
+                </p>
+                <p class="text-tg-textSecondary">
+                    Promoted By
+                    <a
+                        href="https://t.me/+3XoqJNLxYHswNTc1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-tg-skyLight hover:underline font-semibold"
+                    >AD BUILD AGENCY</a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- IN-PAGE POLICY MODAL (Privacy Policy & Terms of Service) -->
+    <div id="policy-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="policy-modal-title">
+        <div class="bg-tg-surface border border-tg-border rounded-2xl max-w-md w-full p-5 shadow-2xl text-left relative">
+            <div class="flex items-center justify-between border-b border-tg-border pb-3 mb-3">
+                <h3 id="policy-modal-title" class="font-bold text-white text-base">Privacy Policy</h3>
+                <button type="button" onclick="closePolicyModal()" class="text-tg-textSecondary hover:text-white p-1.5 rounded-lg bg-tg-bg transition-colors cursor-pointer" aria-label="Close modal">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div id="policy-modal-body" class="text-xs text-tg-textSecondary leading-relaxed space-y-2.5 max-h-[60vh] overflow-y-auto pr-1">
+                <!-- Populated dynamically via JS -->
+            </div>
+            <div class="mt-4 pt-3 border-t border-tg-border flex justify-end">
+                <button type="button" onclick="closePolicyModal()" class="bg-tg-sky hover:bg-tg-skyLight text-white font-bold text-xs px-4 py-2 rounded-xl transition-colors cursor-pointer">
+                    Close
+                </button>
+            </div>
+        </div>
     </div>
 
-    <div class="card">
-      <div class="icon">📊</div>
-      <div>
-        <h3>Market Insights &amp; Analysis</h3>
-        <p>Real-time market updates and expert discussions</p>
-      </div>
-    </div>
+    <!-- Minimal Script for Year & In-Page Modals (Zero Automatic Lead/Click Pixel Listeners) -->
+    <script>
+        const POLICY_CONTENT = {
+            privacy: `
+                <p><strong class="text-white">1. Information Collection:</strong> This webpage does not collect personal form submissions, phone numbers, email addresses, or payment details. Standard anonymous analytics (Meta Pixel PageView) may be used to measure aggregate ad campaign performance.</p>
+                <p><strong class="text-white">2. Third-Party Platform:</strong> Clicking the primary Telegram button redirects you to the official Telegram application/website, which is governed by Telegram's independent Privacy Policy.</p>
+                <p><strong class="text-white">3. Educational Purpose:</strong> PANKAJ BHARDWAJ provides technical analysis and price action study content strictly for educational purposes.</p>
+            `,
+            terms: `
+                <p><strong class="text-white">1. Strictly Educational Content:</strong> All chart markups, support/resistance discussions, and market structure lessons shared by PANKAJ BHARDWAJ are intended solely for educational learning.</p>
+                <p><strong class="text-white">2. Non-SEBI Registered Status:</strong> PANKAJ BHARDWAJ is not registered with SEBI as an investment advisor or research analyst. Nothing shared constitutes financial advice, guaranteed returns, or buy/sell recommendations.</p>
+                <p><strong class="text-white">3. User Responsibility:</strong> Trading and investing in financial markets involve substantial risk. You are solely responsible for your financial decisions and should consult a SEBI-registered advisor prior to investing.</p>
+            `
+        };
 
-    <div class="btn-wrap">
-      <a class="btn" href="https://t.me/+-VrsSbPb6uFlZjll" target="_blank" rel="noopener">
-        <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="120" cy="120" r="120" fill="#fff"/>
-          <path fill="#0069d9" d="M54 118l115-47c5-2 10 1 8 9l-20 93c-1 7-6 9-12 5l-30-22-14 14c-2 2-3 3-6 3l2-31 56-51c3-2-1-4-4-2l-69 44-30-9c-6-2-6-6 2-9z"/>
-        </svg>
-        JOIN NOW TELEGRAM
-      </a>
-    </div>
+        function openPolicyModal(type) {
+            const modal = document.getElementById('policy-modal');
+            const titleEl = document.getElementById('policy-modal-title');
+            const bodyEl = document.getElementById('policy-modal-body');
+            if (!modal || !titleEl || !bodyEl) return;
 
-    <div class="card">
-      <div class="icon">📚</div>
-      <div>
-        <h3>Learn Trading Strategies</h3>
-        <p>Investment | Share Market | Trading guidance</p>
-      </div>
-    </div>
+            titleEl.textContent = type === 'privacy' ? 'Privacy Policy' : 'Terms of Service';
+            bodyEl.innerHTML = POLICY_CONTENT[type] || '';
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
 
-    <div class="gap"></div>
+        function closePolicyModal() {
+            const modal = document.getElementById('policy-modal');
+            if (!modal) return;
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
 
-    <div class="card">
-      <div class="icon">🛡️</div>
-      <div>
-        <h3>Practical Tips &amp; Tricks</h3>
-        <p>Actionable strategies and proven methods</p>
-      </div>
-    </div>
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearEl = document.getElementById('current-year');
+            if (yearEl) {
+                yearEl.textContent = new Date().getFullYear();
+            }
 
-    <p class="disclaimer">
-      Disclaimer: This content is for educational purposes only and does not constitute financial advice. Trading involves risk. Please do your own research before making investment decisions.
-    </p>
+            const modal = document.getElementById('policy-modal');
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) closePolicyModal();
+                });
+            }
 
-  </div>
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closePolicyModal();
+            });
+        });
+    </script>
 </body>
+ 
 </html>
